@@ -1,11 +1,12 @@
-import React from "react";
+"use client";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <div>
-      <p>this is navbar</p>
-    </div>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6">Image Gallery</Typography>
+      </Toolbar>
+    </AppBar>
   );
-};
-
-export default Navbar;
+}
